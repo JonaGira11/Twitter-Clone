@@ -50,10 +50,10 @@ const postTweet = async () => {
     console.log(result, 'insicde the result log')
 
     const json = await result.json();
-    console.log(json, 'insdie json await')
+    // console.log(json, 'insdie json await')
 
     const newTweets = await fetchTweets();
-    console.log(newTweets, 'in new tweets')
+    // console.log(newTweets, 'in new tweets')
     setTweets(newTweets)
 
     toast('Tweet Posted', {
